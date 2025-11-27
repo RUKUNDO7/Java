@@ -1,13 +1,19 @@
 package com.example.demo;
 
+import com.example.demo.repository.PersonRepository;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
 
-@SpringBootTest
+@ExtendWith(MockitoExtension.class)
 class DemoApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+    @Mock
+    private PersonRepository personRepository; // Mockito mock
 
+    @Test
+    void contextLoads() {
+        // Your test logic here
+    }
 }
